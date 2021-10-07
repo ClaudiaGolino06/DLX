@@ -1,0 +1,1026 @@
+ 
+****************************************
+Report : power
+        -net
+        -analysis_effort low
+        -sort_mode net_switching_power
+Design : DLX_IR_SIZE32_PC_SIZE32
+Version: F-2011.09-SP3
+Date   : Sun Sep 19 19:45:02 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+DLX_IR_SIZE32_PC_SIZE32
+                       5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+
+  Attributes
+  ----------
+      a  -  Switching activity information annotated on net
+      d  -  Default switching activity information on net
+
+                             Total      Static   Toggle   Switching
+Net                          Net Load   Prob.    Rate     Power      Attrs
+--------------------------------------------------------------------------------
+DTPTH_I/N14                   54.958    0.986    0.0159      0.5297  
+DTPTH_I/PC_fetch0[0]           5.847    0.500    0.1000      0.3537  d
+DTPTH_I/Imm[17]                9.230    0.464    0.0630      0.3519  
+n298                           4.050    0.514    0.1071      0.2625  
+n297                          25.514    0.984    0.0168      0.2586  
+n265                           4.060    0.500    0.1000      0.2456  d
+n267                           4.060    0.500    0.1000      0.2456  d
+n269                           4.060    0.500    0.1000      0.2456  d
+n271                           4.060    0.500    0.1000      0.2456  d
+n273                           4.060    0.500    0.1000      0.2456  d
+n275                           4.060    0.500    0.1000      0.2456  d
+n277                           4.060    0.500    0.1000      0.2456  d
+n279                           4.060    0.500    0.1000      0.2456  d
+n281                           4.060    0.500    0.1000      0.2456  d
+n283                           4.060    0.500    0.1000      0.2456  d
+n285                           4.060    0.500    0.1000      0.2456  d
+n287                           4.060    0.500    0.1000      0.2456  d
+n289                           4.060    0.500    0.1000      0.2456  d
+n291                           4.060    0.500    0.1000      0.2456  d
+n293                           4.060    0.500    0.1000      0.2456  d
+n295                           4.060    0.500    0.1000      0.2456  d
+n264                           4.027    0.500    0.1000      0.2436  d
+n266                           4.027    0.500    0.1000      0.2436  d
+n268                           4.027    0.500    0.1000      0.2436  d
+n270                           4.027    0.500    0.1000      0.2436  d
+n272                           4.027    0.500    0.1000      0.2436  d
+n274                           4.027    0.500    0.1000      0.2436  d
+n276                           4.027    0.500    0.1000      0.2436  d
+n278                           4.027    0.500    0.1000      0.2436  d
+n280                           4.027    0.500    0.1000      0.2436  d
+n282                           4.027    0.500    0.1000      0.2436  d
+n284                           4.027    0.500    0.1000      0.2436  d
+n286                           4.027    0.500    0.1000      0.2436  d
+n288                           4.027    0.500    0.1000      0.2436  d
+n290                           4.027    0.500    0.1000      0.2436  d
+n292                           4.027    0.500    0.1000      0.2436  d
+n294                           4.027    0.500    0.1000      0.2436  d
+DTPTH_I/add_254/carry[2]       3.758    0.243    0.0994      0.2260  
+DTPTH_I/PC_fetch0[1]           3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[2]           3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[3]           3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[4]           3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[5]           3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[6]           3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[7]           3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[8]           3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[9]           3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[10]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[11]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[12]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[13]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[14]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[15]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[16]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[17]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[18]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[19]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[20]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[21]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[22]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[23]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[24]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[25]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[26]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[27]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[28]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[29]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/PC_fetch0[30]          3.496    0.500    0.1000      0.2115  d
+DTPTH_I/add_254/carry[3]       3.758    0.117    0.0684      0.1555  
+DTPTH_I/PC_fetch0[31]          2.542    0.500    0.1000      0.1538  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[4][0]
+                               2.325    0.264    0.1032      0.1452  
+DTPTH_I/ALU_OP/data1i[0]       2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[1]       2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[2]       2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[3]       2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[6]       2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[7]       2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[10]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[11]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[14]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[15]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[18]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[19]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[22]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[23]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[26]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data1i[27]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[0]       2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[1]       2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[2]       2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[3]       2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[6]       2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[7]       2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[10]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[11]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[14]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[15]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[18]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[19]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[22]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[23]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[26]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/data2i[27]      2.399    0.500    0.1000      0.1451  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[7][0]
+                               2.325    0.263    0.1013      0.1426  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[19][0]
+                               2.325    0.255    0.1009      0.1420  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[3][0]
+                               2.325    0.255    0.1004      0.1412  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[2][0]
+                               2.325    0.244    0.0994      0.1398  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[28][0]
+                               2.325    0.252    0.0993      0.1397  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[27][0]
+                               2.325    0.244    0.0987      0.1389  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[11][0]
+                               2.325    0.253    0.0980      0.1379  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[12][0]
+                               2.325    0.239    0.0979      0.1377  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[16][0]
+                               2.325    0.256    0.0975      0.1372  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[23][0]
+                               2.325    0.250    0.0975      0.1372  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[0][0]
+                               2.325    0.250    0.0970      0.1365  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[8][0]
+                               2.325    0.248    0.0969      0.1363  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[15][0]
+                               2.325    0.248    0.0963      0.1355  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[20][0]
+                               2.325    0.246    0.0957      0.1346  
+DTPTH_I/ALU_OP/adder/carry_logic/gi[24][0]
+                               2.325    0.246    0.0948      0.1334  
+DTPTH_I/regB_mem[0]            2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[1]            2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[2]            2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[3]            2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[4]            2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[5]            2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[6]            2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[7]            2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[8]            2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[9]            2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[10]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[11]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[12]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[13]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[14]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[15]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[16]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[17]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[18]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[19]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[20]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[21]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[22]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[23]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[24]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[25]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[26]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[27]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[28]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[29]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[30]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/regB_mem[31]           2.189    0.500    0.1000      0.1324  d
+DTPTH_I/IR_26_mem[1]           2.073    0.500    0.1000      0.1254  d
+DTPTH_I/IR_26_mem[3]           1.974    0.500    0.1000      0.1194  d
+DTPTH_I/IR_26_mem[2]           1.970    0.500    0.1000      0.1192  d
+n262                           1.933    0.500    0.1000      0.1169  d
+DTPTH_I/IR_26_mem[5]           1.926    0.500    0.1000      0.1165  d
+DTPTH_I/IR_OP/IMMEDIATE_16[15]
+                               1.909    0.500    0.1000      0.1155  d
+DTPTH_I/IR_26_mem[0]           1.905    0.500    0.1000      0.1152  d
+DTPTH_I/IR_26_mem[4]           1.832    0.500    0.1000      0.1108  d
+DTPTH_I/IR_Dec[29]             1.658    0.500    0.1000      0.1003  d
+DTPTH_I/add_254/carry[4]       3.758    0.058    0.0439      0.0999  
+DTPTH_I/IR_Dec[31]             1.640    0.500    0.1000      0.0992  d
+DTPTH_I/IR_Dec[30]             1.639    0.500    0.1000      0.0992  d
+DTPTH_I/IR_Dec[26]             1.637    0.500    0.1000      0.0990  d
+DTPTH_I/ALU_OP/adder/Cout_gen[3]
+                               1.636    0.500    0.1000      0.0990  d
+DTPTH_I/IR_Dec[27]             1.623    0.500    0.1000      0.0982  d
+DTPTH_I/IR_Dec[28]             1.613    0.500    0.1000      0.0976  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[0]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[1]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[2]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[3]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[4]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[5]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[6]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[7]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[8]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[9]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[10]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[11]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[12]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[13]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[14]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[15]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[16]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[17]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[18]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[19]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[20]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[21]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[22]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[23]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[24]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[25]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[26]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[27]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[28]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[29]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[30]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/ALU_OP/OUTPUT_alu_i[31]
+                               1.450    0.500    0.1000      0.0877  d
+DTPTH_I/IR_OP/n9               1.224    0.502    0.1137      0.0842  
+n260                           1.948    0.121    0.0685      0.0807  
+DTPTH_I/IR_OP/n15              1.224    0.495    0.1086      0.0804  
+n195                           1.224    0.486    0.1071      0.0793  
+DTPTH_I/IR_OP/n13              1.224    0.496    0.1071      0.0793  
+DTPTH_I/IR_OP/n4               1.224    0.478    0.1069      0.0792  
+DTPTH_I/IR_OP/n3               1.224    0.498    0.1068      0.0791  
+DTPTH_I/IR_OP/n10              1.224    0.496    0.1062      0.0786  
+DTPTH_I/IR_OP/n7               1.224    0.493    0.1059      0.0784  
+DTPTH_I/IR_OP/n16              1.224    0.501    0.1056      0.0782  
+DTPTH_I/IR_OP/n14              1.224    0.488    0.1054      0.0781  
+DTPTH_I/IR_OP/n6               1.224    0.509    0.1054      0.0780  
+DTPTH_I/IR_OP/n12              1.224    0.485    0.1053      0.0780  
+DTPTH_I/IR_OP/n5               1.224    0.488    0.1052      0.0779  
+DTPTH_I/IR_OP/n17              1.224    0.489    0.1048      0.0776  
+DTPTH_I/IR_OP/n8               1.224    0.489    0.1037      0.0768  
+DTPTH_I/IR_OP/n11              1.224    0.495    0.1032      0.0764  
+DTPTH_I/IR_OP/n19              1.224    0.459    0.1019      0.0754  
+DTPTH_I/IR_OP/IMMEDIATE_16[0]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[1]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[2]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[3]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[4]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[5]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[6]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[7]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[8]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[9]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[10]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[11]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[12]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[13]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/IR_OP/IMMEDIATE_16[14]
+                               1.228    0.500    0.1000      0.0743  d
+DTPTH_I/ALU_ex[0]              1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[1]              1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[2]              1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[3]              1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[4]              1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[5]              1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[6]              1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[7]              1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[8]              1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[9]              1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[10]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[11]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[12]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[13]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[14]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[15]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[16]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[17]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[18]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[19]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[20]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[21]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[22]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[23]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[24]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[25]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[26]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[27]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[28]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[29]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[30]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_ex[31]             1.224    0.500    0.1000      0.0740  d
+DTPTH_I/ALU_OP/adder/Cout_gen[1]
+                               1.146    0.500    0.1000      0.0694  d
+DTPTH_I/add_254/carry[5]       3.758    0.029    0.0266      0.0605  
+DTPTH_I/ALU_OP/adder/Cout_gen[0]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[4][1]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[8][1]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[12][1]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[12][2]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[16][1]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[20][1]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[20][2]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[24][1]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[24][3]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[4][1]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[8][1]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[12][1]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[12][2]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[16][1]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[20][1]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[20][2]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[24][1]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[24][3]
+                               0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[0]             0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[1]             0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[2]             0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[3]             0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[4]             0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[5]             0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[6]             0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[7]             0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[8]             0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[9]             0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[10]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[11]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[12]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[13]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[14]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[15]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[16]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[17]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[18]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[19]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[20]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[21]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[22]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[23]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[24]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[25]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[26]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[27]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[28]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[29]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[30]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/regB_ex[31]            0.699    0.500    0.1000      0.0423  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[4][0]
+                               0.310    0.493    0.1952      0.0366  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[2][0]
+                               0.310    0.504    0.1949      0.0365  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[7][0]
+                               0.310    0.495    0.1939      0.0363  
+DTPTH_I/NPC[1]                 0.310    0.505    0.1937      0.0363  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[12][0]
+                               0.310    0.512    0.1931      0.0362  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[19][0]
+                               0.310    0.505    0.1927      0.0361  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[27][0]
+                               0.310    0.510    0.1927      0.0361  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[0][0]
+                               0.310    0.494    0.1923      0.0360  
+DTPTH_I/add_254/carry[6]       3.758    0.015    0.0158      0.0359  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[20][0]
+                               0.310    0.500    0.1915      0.0359  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[24][0]
+                               0.310    0.493    0.1901      0.0356  
+n296                           1.231    0.937    0.0478      0.0356  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[16][0]
+                               0.310    0.490    0.1900      0.0356  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[3][0]
+                               0.310    0.508    0.1894      0.0355  
+DTPTH_I/NPC[2]                 0.310    0.497    0.1894      0.0355  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[28][0]
+                               0.310    0.512    0.1893      0.0355  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[23][0]
+                               0.310    0.501    0.1890      0.0354  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[15][0]
+                               0.310    0.503    0.1888      0.0354  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[11][0]
+                               0.310    0.512    0.1884      0.0353  
+DTPTH_I/ALU_OP/adder/carry_logic/pi[8][0]
+                               0.310    0.502    0.1883      0.0353  
+DTPTH_I/NPC[3]                 0.310    0.513    0.1638      0.0307  
+DTPTH_I/Imm[6]                 0.699    0.499    0.0721      0.0305  
+DTPTH_I/Imm[12]                0.699    0.496    0.0693      0.0293  
+DTPTH_I/Imm[0]                 0.699    0.493    0.0690      0.0292  
+DTPTH_I/Imm[4]                 0.699    0.480    0.0687      0.0290  
+DTPTH_I/Imm[11]                0.699    0.497    0.0683      0.0289  
+DTPTH_I/Imm[3]                 0.699    0.522    0.0682      0.0288  
+DTPTH_I/Imm[13]                0.699    0.508    0.0679      0.0287  
+DTPTH_I/Imm[7]                 0.699    0.489    0.0678      0.0287  
+DTPTH_I/Imm[10]                0.699    0.498    0.0678      0.0287  
+DTPTH_I/Imm[8]                 0.699    0.484    0.0673      0.0285  
+DTPTH_I/Imm[1]                 0.699    0.471    0.0672      0.0284  
+DTPTH_I/Imm[2]                 0.699    0.492    0.0666      0.0282  
+DTPTH_I/Imm[9]                 0.699    0.495    0.0665      0.0281  
+DTPTH_I/Imm[15]                0.699    0.492    0.0662      0.0280  
+DTPTH_I/Imm[5]                 0.699    0.485    0.0657      0.0278  
+DTPTH_I/Imm[14]                0.699    0.481    0.0651      0.0275  
+DTPTH_I/NPC[4]                 0.310    0.489    0.1359      0.0255  
+DTPTH_I/NPC[5]                 0.310    0.501    0.1255      0.0235  
+DTPTH_I/NPC[6]                 0.310    0.488    0.1171      0.0219  
+DTPTH_I/add_254/carry[7]       3.758    0.008    0.0092      0.0210  
+DTPTH_I/NPC[7]                 0.310    0.501    0.1083      0.0203  
+DTPTH_I/NPC[8]                 0.310    0.503    0.1065      0.0200  
+DTPTH_I/NPC[9]                 0.310    0.501    0.1040      0.0195  
+DTPTH_I/NPC[19]                0.310    0.495    0.1027      0.0192  
+DRAM_ADDRESS[14]               0.310    0.509    0.1021      0.0191  
+DTPTH_I/NPC[13]                0.310    0.495    0.1021      0.0191  
+DTPTH_I/NPC[26]                0.310    0.498    0.1021      0.0191  
+DTPTH_I/NPC[28]                0.310    0.491    0.1021      0.0191  
+DTPTH_I/NPC[25]                0.310    0.498    0.1019      0.0191  
+DTPTH_I/NPC[16]                0.310    0.510    0.1018      0.0191  
+DTPTH_I/NPC[11]                0.310    0.488    0.1017      0.0191  
+DTPTH_I/NPC[10]                0.310    0.514    0.1010      0.0189  
+DTPTH_I/NPC[22]                0.310    0.489    0.1009      0.0189  
+DTPTH_I/NPC[23]                0.310    0.495    0.1008      0.0189  
+DTPTH_I/NPC[14]                0.310    0.481    0.1007      0.0189  
+DTPTH_I/NPC[20]                0.310    0.508    0.1007      0.0189  
+DRAM_ADDRESS[22]               0.310    0.513    0.1005      0.0188  
+DRAM_ADDRESS[0]                0.310    0.492    0.1003      0.0188  
+DRAM_ADDRESS[19]               0.310    0.510    0.1002      0.0188  
+DRAM_ADDRESS[10]               0.310    0.516    0.1001      0.0188  
+DRAM_ADDRESS[27]               0.310    0.489    0.1001      0.0188  
+DTPTH_I/NPC[30]                0.310    0.493    0.1001      0.0188  
+DTPTH_I/ALU_OP/adder/Cout_gen[2]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/Cout_gen[4]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/Cout_gen[5]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/Cout_gen[6]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[1][0]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[2][1]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[8][2]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[16][2]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[16][3]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[24][2]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[28][1]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[28][2]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/gi[28][4]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[8][2]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[16][2]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[16][3]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[24][2]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[28][1]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[28][2]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/adder/carry_logic/pi[28][4]
+                               0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[4]       0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[5]       0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[8]       0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[9]       0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[12]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[13]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[16]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[17]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[20]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[21]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[24]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[25]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[28]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[29]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[30]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data1i[31]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[4]       0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[5]       0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[8]       0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[9]       0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[12]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[13]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[16]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[17]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[20]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[21]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[24]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[25]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[28]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[29]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[30]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ALU_OP/data2i[31]      0.310    0.500    0.1000      0.0187  d
+DTPTH_I/IR_26_ex[0]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/IR_26_ex[1]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/IR_26_ex[2]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/IR_26_ex[3]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/IR_26_ex[4]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/IR_26_ex[5]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[0]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[1]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[2]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[3]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[4]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[5]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[6]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[7]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[8]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[9]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[10]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[11]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[12]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[13]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[14]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[15]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[16]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[17]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[18]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[19]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[20]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[21]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[22]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[23]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[24]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[25]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[26]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[27]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[28]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[29]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[30]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/Imm_ex[31]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[0]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[1]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[2]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[3]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[4]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[5]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[6]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[7]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[8]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[9]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[10]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[11]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[12]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[13]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[14]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[15]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[16]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[17]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[18]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[19]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[20]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[21]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[22]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[23]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[24]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[25]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[26]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[27]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[28]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[29]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[30]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/LHI_ex[31]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC[0]                 0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[0]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[1]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[2]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[3]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[4]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[5]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[6]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[7]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[8]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[9]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[10]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[11]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[12]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[13]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[14]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[15]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[16]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[17]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[18]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[19]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[20]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[21]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[22]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[23]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[24]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[25]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[26]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[27]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[28]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[29]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[30]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_Dec[31]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[0]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[1]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[2]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[3]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[4]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[5]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[6]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[7]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[8]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[9]              0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[10]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[11]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[12]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[13]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[14]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[15]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[16]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[17]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[18]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[19]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[20]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[21]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[22]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[23]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[24]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[25]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[26]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[27]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[28]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[29]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[30]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_ex[31]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[0]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[1]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[2]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[3]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[4]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[5]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[6]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[7]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[8]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[9]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[10]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[11]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[12]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[13]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[14]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[15]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[16]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[17]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[18]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[19]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[20]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[21]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[22]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[23]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[24]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[25]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[26]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[27]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[28]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[29]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[30]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch1[31]         0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[0]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[1]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[2]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[3]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[4]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[5]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[6]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[7]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[8]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[9]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[10]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[11]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[12]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[13]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[14]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[15]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[16]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[17]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[18]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[19]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[20]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[21]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[22]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[23]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[24]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[25]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[26]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[27]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[28]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[29]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[30]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC_fetch[31]          0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[0]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[1]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[2]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[3]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[4]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[5]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[6]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[7]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[8]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[9]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[10]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[11]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[12]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[13]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[14]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[15]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[16]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[17]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[18]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[19]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[20]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[21]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[22]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[23]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[24]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[25]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[26]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[27]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[28]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[29]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[30]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/ir_fetch[31]           0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[0]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[1]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[2]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[3]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[4]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[5]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[6]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[7]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[8]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[9]             0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[10]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[11]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[12]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[13]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[14]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[15]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[16]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[17]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[18]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[19]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[20]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[21]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[22]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[23]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[24]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[25]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[26]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[27]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[28]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[29]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[30]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/regA_ex[31]            0.310    0.500    0.1000      0.0187  d
+DTPTH_I/NPC[24]                0.310    0.506    0.0999      0.0187  
+DRAM_ADDRESS[3]                0.310    0.504    0.0998      0.0187  
+DRAM_ADDRESS[5]                0.310    0.503    0.0998      0.0187  
+DTPTH_I/NPC[31]                0.310    0.494    0.0998      0.0187  
+DRAM_ADDRESS[7]                0.310    0.510    0.0997      0.0187  
+DRAM_ADDRESS[11]               0.310    0.505    0.0997      0.0187  
+DRAM_ADDRESS[16]               0.310    0.499    0.0997      0.0187  
+DRAM_ADDRESS[1]                0.310    0.489    0.0996      0.0187  
+DRAM_ADDRESS[21]               0.310    0.501    0.0995      0.0187  
+DRAM_ADDRESS[15]               0.310    0.492    0.0995      0.0186  
+DRAM_ADDRESS[6]                0.310    0.507    0.0994      0.0186  
+DRAM_ADDRESS[29]               0.310    0.509    0.0994      0.0186  
+DRAM_ADDRESS[20]               0.310    0.509    0.0993      0.0186  
+DRAM_ADDRESS[26]               0.310    0.495    0.0993      0.0186  
+DRAM_ADDRESS[8]                0.310    0.500    0.0992      0.0186  
+DRAM_ADDRESS[24]               0.310    0.496    0.0992      0.0186  
+DRAM_ADDRESS[30]               0.310    0.493    0.0992      0.0186  
+DRAM_ADDRESS[28]               0.310    0.502    0.0990      0.0186  
+DRAM_ADDRESS[12]               0.310    0.509    0.0990      0.0185  
+DRAM_ADDRESS[4]                0.310    0.492    0.0988      0.0185  
+DTPTH_I/NPC[21]                0.310    0.499    0.0988      0.0185  
+DTPTH_I/NPC[29]                0.310    0.510    0.0984      0.0184  
+DRAM_ADDRESS[2]                0.310    0.495    0.0984      0.0184  
+DTPTH_I/NPC[12]                0.310    0.504    0.0982      0.0184  
+DTPTH_I/NPC[27]                0.310    0.500    0.0982      0.0184  
+DRAM_ADDRESS[9]                0.310    0.509    0.0981      0.0184  
+DRAM_ADDRESS[25]               0.310    0.510    0.0980      0.0184  
+DRAM_ADDRESS[17]               0.310    0.474    0.0978      0.0183  
+DTPTH_I/NPC[18]                0.310    0.505    0.0977      0.0183  
+DTPTH_I/NPC[17]                0.310    0.507    0.0977      0.0183  
+DRAM_ADDRESS[23]               0.310    0.504    0.0977      0.0183  
+DRAM_ADDRESS[31]               0.310    0.514    0.0973      0.0182  
+DRAM_ADDRESS[13]               0.310    0.499    0.0971      0.0182  
+DTPTH_I/NPC[15]                0.310    0.480    0.0966      0.0181  
+DRAM_ADDRESS[18]               0.310    0.507    0.0956      0.0179  
+DTPTH_I/add_254/carry[8]       3.758    0.004    0.0057      0.0130  
+DTPTH_I/add_254/carry[9]       3.758    0.002    0.0031      0.0069  
+DTPTH_I/add_254/carry[10]      3.758    0.002    0.0022      0.0050  
+DTPTH_I/ALU_out[0]             0.310    0.513    0.0241      0.0045  
+DTPTH_I/ALU_out[19]            0.310    0.493    0.0241      0.0045  
+DTPTH_I/ALU_out[13]            0.310    0.510    0.0238      0.0045  
+DTPTH_I/ALU_out[12]            0.310    0.492    0.0234      0.0044  
+DTPTH_I/ALU_out[22]            0.310    0.474    0.0232      0.0043  
+DTPTH_I/ALU_out[2]             0.310    0.485    0.0231      0.0043  
+DTPTH_I/ALU_out[3]             0.310    0.488    0.0230      0.0043  
+DTPTH_I/ALU_out[30]            0.310    0.490    0.0230      0.0043  
+DTPTH_I/ALU_out[4]             0.310    0.488    0.0229      0.0043  
+DTPTH_I/ALU_out[23]            0.310    0.479    0.0228      0.0043  
+DTPTH_I/ALU_out[21]            0.310    0.513    0.0228      0.0043  
+DTPTH_I/ALU_out[7]             0.310    0.472    0.0227      0.0043  
+DTPTH_I/ALU_out[11]            0.310    0.492    0.0227      0.0043  
+DTPTH_I/ALU_out[1]             0.310    0.489    0.0226      0.0042  
+DTPTH_I/ALU_out[27]            0.310    0.493    0.0226      0.0042  
+DTPTH_I/ALU_out[25]            0.310    0.471    0.0226      0.0042  
+DTPTH_I/ALU_out[6]             0.310    0.529    0.0226      0.0042  
+DTPTH_I/ALU_out[10]            0.310    0.511    0.0225      0.0042  
+DTPTH_I/ALU_out[8]             0.310    0.452    0.0224      0.0042  
+DTPTH_I/ALU_out[9]             0.310    0.524    0.0224      0.0042  
+DTPTH_I/ALU_out[14]            0.310    0.478    0.0223      0.0042  
+DTPTH_I/ALU_out[31]            0.310    0.480    0.0223      0.0042  
+DTPTH_I/ALU_out[28]            0.310    0.500    0.0222      0.0042  
+DTPTH_I/ALU_out[24]            0.310    0.503    0.0222      0.0042  
+DTPTH_I/ALU_out[26]            0.310    0.493    0.0222      0.0042  
+CU_I/n149                      1.450    0.049    0.0047      0.0041  
+DTPTH_I/ALU_out[29]            0.310    0.493    0.0219      0.0041  
+DTPTH_I/ALU_out[18]            0.310    0.497    0.0219      0.0041  
+DTPTH_I/ALU_out[16]            0.310    0.494    0.0217      0.0041  
+DTPTH_I/ALU_out[15]            0.310    0.480    0.0216      0.0040  
+DTPTH_I/ALU_out[17]            0.310    0.494    0.0216      0.0040  
+DTPTH_I/ALU_out[5]             0.310    0.479    0.0215      0.0040  
+DTPTH_I/ALU_out[20]            0.310    0.495    0.0210      0.0039  
+CU_I/n150                      1.450    0.019    0.0035      0.0031  
+DTPTH_I/add_254/carry[11]      3.758    0.001    0.0013      0.0029  
+signed_unsigned_i              2.024    0.053    0.0020      0.0024  
+n255                           3.960    0.969    0.0010      0.0023  
+DTPTH_I/add_254/carry[12]      3.758    0.000    0.0007      0.0015  
+DTPTH_I/add_254/carry[13]      3.758    0.000    0.0006      0.0014  
+DTPTH_I/add_254/carry[14]      3.758    0.000    0.0006      0.0014  
+n261                           1.894    0.934    0.0010      0.0011  
+DTPTH_I/add_254/carry[15]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[16]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[17]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[18]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[19]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[20]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[21]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[22]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[23]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[24]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[25]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[26]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[27]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[28]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[29]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[30]      3.758    0.000    0.0005      0.0011  
+DTPTH_I/add_254/carry[31]      2.721    0.000    0.0005      0.0008  
+CU_I/signed_unsigned_i         1.974    0.000    0.0000      0.0000  
+DRAM_DATA[0]                   0.310    0.000    0.0000      0.0000  
+DRAM_DATA[1]                   0.310    0.000    0.0000      0.0000  
+DRAM_DATA[2]                   0.310    0.000    0.0000      0.0000  
+DRAM_DATA[3]                   0.310    0.000    0.0000      0.0000  
+DRAM_DATA[4]                   0.310    0.000    0.0000      0.0000  
+DRAM_DATA[5]                   0.310    0.000    0.0000      0.0000  
+DRAM_DATA[6]                   0.310    0.000    0.0000      0.0000  
+DRAM_DATA[7]                   0.310    0.000    0.0000      0.0000  
+DRAM_DATA[8]                   0.310    0.000    0.0000      0.0000  
+DRAM_DATA[9]                   0.310    0.000    0.0000      0.0000  
+DRAM_DATA[10]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[11]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[12]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[13]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[14]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[15]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[16]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[17]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[18]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[19]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[20]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[21]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[22]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[23]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[24]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[25]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[26]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[27]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[28]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[29]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[30]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[31]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[32]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[33]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[34]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[35]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[36]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[37]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[38]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[39]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[40]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[41]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[42]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[43]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[44]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[45]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[46]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[47]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[48]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[49]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[50]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[51]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[52]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[53]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[54]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[55]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[56]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[57]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[58]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[59]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[60]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[61]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[62]                  0.310    0.000    0.0000      0.0000  
+DRAM_DATA[63]                  0.310    0.000    0.0000      0.0000  
+DRAM_READNOTWRITE            167.628    1.000    0.0000      0.0000  d
+IRAM_ADDRESS[31]             254.878    0.000    0.0000      0.0000  d
+n263                           1.980    1.000    0.0000      0.0000  
+--------------------------------------------------------------------------------
+Total (858 nets)                                            47.7536 uW
+1

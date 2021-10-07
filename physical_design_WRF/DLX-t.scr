@@ -1,0 +1,52 @@
+########################################################
+#SCRIPT FOR SPEEDING UP and RECORDING the DLX SYNTHESIS#
+########################################################
+exec mkdir -p work
+analyze -library WORK -format vhdl {000-globals.vhd}
+analyze -library WORK -format vhdl {01-FFD.vhd}
+analyze -library WORK -format vhdl {01-generic_shifter.vhd}
+analyze -library WORK -format vhdl {01-iv.vhd}
+analyze -library WORK -format vhdl {01-nd2.vhd}
+analyze -library WORK -format vhdl {01-reg.vhd}
+analyze -library WORK -format vhdl {rocache.vhd}
+analyze -library WORK -format vhdl {rwcache.vhd}
+analyze -library WORK -format vhdl {a.a-CU_HW.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.a-zero_evaluation.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.b-cond_eval.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.c-sign_ext.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.d-mux21.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.e-mux21_generic.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.g-ir_assigment.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.h-load_eval.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.i-window_RF.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.j-comparator.vhdl}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.k-logic.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu2.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.a-constants.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.b-fa.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.c-g.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.d-p.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.e-lfsr.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.f-pg.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.g-rca.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.h-csb.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.i-carry_generator.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.j-sum_gen.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.k-p4_adder.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu2.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.vhd}
+analyze -library WORK -format vhdl {a-DLX.vhd}
+# elaborating the top entity: DLX
+set_wire_load_model -name 5K_hvratio_1_4
+elaborate DLX -architecture DLX_RTL -library WORK -parameters "IR_SIZE = 32, PC_SIZE = 32"
+#0.833 cycle constraint that corresponds to 1.2 GHz
+create_clock -name "CLK" -period 0.833 CLK
+set_max_delay 0.833 -from [all_inputs] -to [all_outputs]
+compile -map_effort high 
+report_timing > DLX_timeopt_t.rpt
+report_power > DLX_timeopt_pw.txt
+# saving files
+write -hierarchy -format ddc -output DLX.ddc
+write -hierarchy -format vhdl -output DLX.vhdl
+write -hierarchy -format verilog -output DLX.v
+write_sdc DLX.sdc

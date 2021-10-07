@@ -1,0 +1,51 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'DLX_IR_SIZE32_PC_SIZE32' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DLX_IR_SIZE32_PC_SIZE32
+Version: F-2011.09-SP3
+Date   : Wed Sep 22 18:18:19 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: CU_I/aluOpcode3_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: DRAM_ISSUE (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX_IR_SIZE32_PC_SIZE32
+                     5K_hvratio_1_4        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  CU_I/aluOpcode3_reg[2]/CK (DFFR_X1)                     0.00 #     0.00 r
+  CU_I/aluOpcode3_reg[2]/Q (DFFR_X1)                      0.19       0.19 r
+  CU_I/ALU_OPCODE[2] (dlx_cu_MICROCODE_MEM_SIZE62_FUNC_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE15)
+                                                          0.00       0.19 r
+  DTPTH_I/instruction_alu[2] (DATAPTH_NBIT32_REG_BIT5)
+                                                          0.00       0.19 r
+  DTPTH_I/U63/ZN (INV_X1)                                 0.06       0.25 f
+  DTPTH_I/U60/ZN (NAND2_X1)                               0.04       0.29 r
+  DTPTH_I/U59/Z (MUX2_X1)                                 0.05       0.34 r
+  DTPTH_I/U58/ZN (NOR3_X1)                                0.02       0.36 f
+  DTPTH_I/U57/Z (MUX2_X1)                                 0.07       0.43 f
+  DTPTH_I/U56/ZN (OR3_X1)                                 0.09       0.52 f
+  DTPTH_I/DATA_MEM_ENABLE (DATAPTH_NBIT32_REG_BIT5)       0.00       0.52 f
+  DRAM_ISSUE (out)                                        0.00       0.52 f
+  data arrival time                                                  0.52
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,67 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'DLX_IR_SIZE32_PC_SIZE32' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DLX_IR_SIZE32_PC_SIZE32
+Version: F-2011.09-SP3
+Date   : Wed Sep 22 10:17:01 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: DTPTH_I/pipeline_IR1/Q_reg[29]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: DTPTH_I/IR_OP/IMMEDIATE_reg[15]
+            (positive level-sensitive latch clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX_IR_SIZE32_PC_SIZE32
+                     5K_hvratio_1_4        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DTPTH_I/pipeline_IR1/Q_reg[29]/CK (DFFR_X1)             0.00 #     0.00 r
+  DTPTH_I/pipeline_IR1/Q_reg[29]/Q (DFFR_X1)              0.09       0.09 f
+  DTPTH_I/pipeline_IR1/Q[29] (regFFD_NBIT32_12)           0.00       0.09 f
+  DTPTH_I/IR_OP/OPCODE[3] (IR_DECODE_NBIT32_opBIT6_regBIT5)
+                                                          0.00       0.09 f
+  DTPTH_I/IR_OP/U20/ZN (OR3_X2)                           0.10       0.19 f
+  DTPTH_I/IR_OP/U9/ZN (OR4_X2)                            0.13       0.32 f
+  DTPTH_I/IR_OP/U40/ZN (AND2_X1)                          0.04       0.37 f
+  DTPTH_I/IR_OP/IMMEDIATE_reg[15]/D (DLH_X1)              0.01       0.38 f
+  data arrival time                                                  0.38
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DTPTH_I/IR_OP/IMMEDIATE_reg[15]/G (DLH_X1)              0.00       0.00 r
+  time borrowed from endpoint                             0.36       0.36
+  data required time                                                 0.36
+  --------------------------------------------------------------------------
+  data required time                                                 0.36
+  data arrival time                                                 -0.38
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  CLK pulse width                                         0.42   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         0.36   
+  actual time borrow                                      0.36   
+  --------------------------------------------------------------
+
+
+1

@@ -1,0 +1,105 @@
+########################################################
+#SCRIPT FOR SPEEDING UP and RECORDING the DLX SYNTHESIS#
+########################################################
+exec mkdir -p work
+exec mkdir -p report
+exec mkdir -p netlist
+analyze -library WORK -format vhdl {000-globals.vhd}
+analyze -library WORK -format vhdl {01-FFD.vhd}
+analyze -library WORK -format vhdl {01-generic_shifter.vhd}
+analyze -library WORK -format vhdl {01-iv.vhd}
+analyze -library WORK -format vhdl {01-nd2.vhd}
+analyze -library WORK -format vhdl {01-reg.vhd}
+analyze -library WORK -format vhdl {rocache.vhd}
+analyze -library WORK -format vhdl {rwcache.vhd}
+analyze -library WORK -format vhdl {a.a-CU_HW.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.a-zero_evaluation.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.b-cond_eval.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.c-sign_ext.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.d-mux21.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.e-mux21_generic.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.g-ir_assigment.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.h-load_eval.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.i-registerfile.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.j-comparator.vhdl}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.k-logic.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu2.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.a-constants.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.b-fa.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.c-g.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.d-p.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.e-lfsr.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.f-pg.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.g-rca.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.h-csb.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.i-carry_generator.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.j-sum_gen.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu.core/a.b.l.k-p4_adder.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.core/a.b.l-alu2.vhd}
+analyze -library WORK -format vhdl {a.b-datapath.vhd}
+analyze -library WORK -format vhdl {a-DLX.vhd}
+# elaborating the top entity: DLX
+set_wire_load_model -name 5K_hvratio_1_4
+elaborate DLX -architecture DLX_RTL -library WORK -parameters "IR_SIZE = 32, PC_SIZE = 32"
+# Basic compilation withouth constraints
+compile 
+report_timing > report/DLX_NOPT_TIMING.txt
+report_area > report/DLX_NOPT_AREA.txt
+report_power > report/DLX_NOPT_POWER.txt 
+report_power -cell > report/DLX_NOPT_POWER_CELL.txt
+report_power -net > report/DLX_NOPT_POWER_NET.txt
+# Optimized compilation
+compile_ultra 
+report_timing > report/compile_ultra/DLX_OPT_TIMING.txt
+report_area > report/compile_ultra/DLX_OPT_AREA.txt
+report_power > report/compile_ultra/DLX_OPT_POWER.txt 
+report_power -cell > report/compile_ultra/DLX_OPT_POWER_CELL.txt
+report_power -net > report/compile_ultra/DLX_OPT_POWER_NET.txt
+# Static Timinig Analysis
+#0.588 cycle constraint that corresponds to 1.7 GHz
+create_clock -name "CLK" -period 0.588 CLK
+set_max_delay 0.588 -from [all_inputs] -to [all_outputs]
+compile -incremental 
+report_timing > report/DLX_TIMING_588.txt
+report_area > report/DLX_AREA_588.txt
+report_power > report/DLX_POWER_588.txt 
+#0.625 cycle constraint that corresponds to 1.6 GHz
+create_clock -name "CLK" -period 0.625 CLK
+set_max_delay 0.625 -from [all_inputs] -to [all_outputs]
+compile -incremental 
+report_timing > report/DLX_TIMING_625.txt
+report_area > report/DLX_AREA_625.txt
+report_power > report/DLX_POWER_625.txt
+#0.667 cycle constraint that corresponds to 1.5 GHz
+create_clock -name "CLK" -period 0.667 CLK
+set_max_delay 0.667 -from [all_inputs] -to [all_outputs]
+compile -incremental 
+report_timing > report/DLX_TIMING_667.txt
+report_area > report/DLX_AREA_667.txt
+report_power > report/DLX_POWER_667.txt
+#0.714 cycle constraint that corresponds to 1.4 GHz
+create_clock -name "CLK" -period 0.714 CLK
+set_max_delay 0.714 -from [all_inputs] -to [all_outputs]
+compile -incremental 
+report_timing > report/DLX_TIMING_714.txt
+report_area > report/DLX_AREA_714.txt
+report_power > report/DLX_POWER_714.txt
+#0.769 cycle constraint that corresponds to 1.3 GHz
+create_clock -name "CLK" -period 0.769 CLK
+set_max_delay 0.769 -from [all_inputs] -to [all_outputs]
+compile -incremental 
+report_timing > report/DLX_TIMING_769.txt
+report_area > report/DLX_AREA_769.txt
+report_power > report/DLX_POWER_769.txt
+# Selected the clock that gives best performaces 
+create_clock -name "CLK" -period 0.714 CLK
+set_max_delay 0.714 -from [all_inputs] -to [all_outputs]
+compile -incremental 
+report_timing > report/DLX_timeopt_t.txt
+report_area > report/DLX_timeopt_a.txt
+report_power > report/DLX_timeopt_pw.txt
+# saving files
+write -hierarchy -format ddc -output netlist/DLX.ddc
+write -hierarchy -format vhdl -output netlist/DLX.vhdl
+write -hierarchy -format verilog -output netlist/DLX.v
+write_sdc netlist/DLX.sdc

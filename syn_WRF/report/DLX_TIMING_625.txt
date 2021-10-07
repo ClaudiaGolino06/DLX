@@ -1,0 +1,71 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'DLX_IR_SIZE32_PC_SIZE32' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DLX_IR_SIZE32_PC_SIZE32
+Version: F-2011.09-SP3
+Date   : Wed Sep 22 18:28:18 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: CU_I/iterator_ret_reg[4]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: CU_I/iterator_ret_reg[21]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX_IR_SIZE32_PC_SIZE32
+                     5K_hvratio_1_4        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CU_I/iterator_ret_reg[4]/CK (DFF_X1)                    0.00 #     0.00 r
+  CU_I/iterator_ret_reg[4]/Q (DFF_X1)                     0.09       0.09 r
+  CU_I/add_236/A[4] (dlx_cu_MICROCODE_MEM_SIZE62_FUNC_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE15_DW01_inc_4)
+                                                          0.00       0.09 r
+  CU_I/add_236/U24/Z (BUF_X1)                             0.04       0.13 r
+  CU_I/add_236/U177/ZN (NAND3_X1)                         0.04       0.17 f
+  CU_I/add_236/U30/ZN (NOR2_X1)                           0.04       0.22 r
+  CU_I/add_236/U34/ZN (AND3_X1)                           0.06       0.28 r
+  CU_I/add_236/U98/ZN (AND2_X1)                           0.05       0.33 r
+  CU_I/add_236/U6/ZN (XNOR2_X1)                           0.04       0.36 f
+  CU_I/add_236/SUM[23] (dlx_cu_MICROCODE_MEM_SIZE62_FUNC_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE15_DW01_inc_4)
+                                                          0.00       0.36 f
+  CU_I/U435/ZN (INV_X1)                                   0.03       0.39 r
+  CU_I/U434/ZN (NAND4_X1)                                 0.04       0.44 f
+  CU_I/U428/ZN (NOR4_X1)                                  0.09       0.53 r
+  CU_I/U427/ZN (NAND2_X1)                                 0.04       0.57 f
+  CU_I/U93/ZN (AND2_X1)                                   0.05       0.62 f
+  CU_I/U96/ZN (NAND2_X1)                                  0.03       0.65 r
+  CU_I/U181/ZN (OAI21_X1)                                 0.03       0.69 f
+  CU_I/U179/Z (BUF_X1)                                    0.06       0.74 f
+  CU_I/U286/ZN (OAI22_X1)                                 0.06       0.80 r
+  CU_I/iterator_ret_reg[21]/D (DFF_X1)                    0.01       0.81 r
+  data arrival time                                                  0.81
+
+  clock CLK (rise edge)                                   0.62       0.62
+  clock network delay (ideal)                             0.00       0.62
+  CU_I/iterator_ret_reg[21]/CK (DFF_X1)                   0.00       0.62 r
+  library setup time                                     -0.04       0.59
+  data required time                                                 0.59
+  --------------------------------------------------------------------------
+  data required time                                                 0.59
+  data arrival time                                                 -0.81
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.22
+
+
+1
